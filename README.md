@@ -1,1 +1,1 @@
-# lamding-page
+# landing-page
