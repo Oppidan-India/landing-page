@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import './App.css';
-import { Menu, X, ChevronDown, Send, Phone, Mail, MapPin, Users, Award, Target, Zap, ArrowRight, Star, Calendar, Trophy, Image as ImageIcon } from 'lucide-react';
+import { Menu, X, Send, Phone, Mail, MapPin, Users, Award, Target, Zap, ArrowRight, Star, Calendar, Trophy, Image as ImageIcon } from 'lucide-react';
 
 const OpidanWebsite = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
