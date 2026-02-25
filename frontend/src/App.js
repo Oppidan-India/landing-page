@@ -19,8 +19,8 @@ const OpidanWebsite = () => {
   const ventures = [
     {
       name: 'Oppidan India',
-      description: 'Internships, EdTech training, workshops for skill development',
-      details: 'Comprehensive training programs and internships designed to bridge the gap between academic learning and industry requirements.',
+      description: 'Custom Software, Web & App Development, Industry Training & Internships',
+      details: 'We build customized software solutions for businesses while providing hands-on training and internships to develop industry-ready professionals.',
       icon: '🎓',
       logo: '/images/logos/oppidan-india.png',
       color: 'from-blue-500 to-blue-600'
