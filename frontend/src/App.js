@@ -166,7 +166,7 @@ const OpidanWebsite = () => {
       title: 'Founder Speaking',
       description: 'Inspiring address to audience',
       category: 'leadership',
-      image: '/images/gallery/event-11.jpg'
+      image: '/images/gallery/event-11.jpeg'
     },
     {
       title: 'Public Speaking Event',
