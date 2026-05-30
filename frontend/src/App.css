@@ -13,3 +13,79 @@ html{
 body{
   overflow-x:hidden;
 }
+
+/* Keep the shared fixed navigation usable on phones and tablets. */
+@media(max-width:768px){
+  body .navbar{
+    padding:12px 5%;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:10px 14px;
+  }
+
+  body .navbar .logo-img{
+    width:110px;
+  }
+
+  body .navbar > a{
+    flex-shrink:0;
+  }
+
+  body .navbar .nav-btn{
+    padding:10px 14px;
+    border-radius:10px;
+    font-size:12px;
+  }
+
+  body .navbar .nav-links{
+    display:flex;
+    order:3;
+    width:100%;
+    gap:8px;
+    padding:2px 0 4px;
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    list-style:none;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  body .navbar .nav-links::-webkit-scrollbar{
+    display:none;
+  }
+
+  body .navbar .nav-links li{
+    flex:0 0 auto;
+  }
+
+  body .navbar .nav-links a{
+    display:block;
+    padding:7px 10px;
+    border-radius:8px;
+    color:#d1d5db;
+    font-size:12px;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+
+  body .navbar .nav-links a:hover,
+  body .navbar .nav-links a.active{
+    background:rgba(255,255,255,0.08);
+    color:white;
+  }
+}
+
+@media(max-width:380px){
+  body .navbar{
+    padding-inline:4%;
+  }
+
+  body .navbar .logo-img{
+    width:94px;
+  }
+
+  body .navbar .nav-btn{
+    padding:9px 11px;
+    font-size:11px;
+  }
+}
