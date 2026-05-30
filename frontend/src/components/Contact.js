@@ -3,7 +3,7 @@
 import "./Contact.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import logo from "../assets/logo.jpeg";
+import SiteNav from "./SiteNav";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -59,30 +59,7 @@ function Contact() {
   return (
     <div className="contact-page">
 
-      <nav className="navbar">
-        <img
-          src={logo}
-          alt="Oppidan India"
-          className="logo-img"
-        />
-
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/projects">Ventures</Link></li>
-          <li><Link to="/internship">Internship</Link></li>
-          <li>
-            <Link to="/contact" className="active">
-              Contact
-            </Link>
-          </li>
-        </ul>
-
-        <Link to="/contact">
-          <button className="nav-btn">Connect With Us</button>
-        </Link>
-      </nav>
+      <SiteNav />
 
       <section className="contact-hero">
         <div className="hero-tag">

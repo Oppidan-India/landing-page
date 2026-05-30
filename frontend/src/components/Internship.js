@@ -3,7 +3,7 @@
 import "./Internship.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import logo from "../assets/logo.jpeg";
+import SiteNav from "./SiteNav";
 function Internship() {
 
   useEffect(() => {
@@ -18,51 +18,7 @@ function Internship() {
 
       {/* NAVBAR */}
 
-      <nav className="navbar">
-
-        <img
-          src={logo}
-          alt="Oppidan India"
-          className="logo-img"
-        />
-
-        <ul className="nav-links">
-
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-
-          <li>
-            <Link to="/projects">Ventures</Link>
-          </li>
-
-          <li>
-            <Link to="/internship" className="active">
-              Internship
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-
-        </ul>
-
-        <Link to="/contact">
-          <button className="nav-btn">
-            Connect With Us
-          </button>
-        </Link>
-
-      </nav>
+      <SiteNav />
 
       {/* HERO SECTION */}
 

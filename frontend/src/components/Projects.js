@@ -3,7 +3,7 @@
 import "./Projects.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import logo from "../assets/logo.jpeg";
+import SiteNav from "./SiteNav";
 
 function Projects() {
 
@@ -120,49 +120,7 @@ function Projects() {
 
       {/* NAVBAR */}
 
-      <nav className="navbar">
-
-        <img
-          src={logo}
-          alt="Oppidan India"
-          className="logo-img"
-        />
-
-        <ul className="nav-links">
-
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-
-          <li className="active">
-            <Link to="/projects">Ventures</Link>
-          </li>
-
-          <li>
-            <Link to="/internship">Internship</Link>
-          </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-
-        </ul>
-
-         <Link to="/contact">
-          <button className="nav-btn">
-            Connect With Us
-          </button>
-        </Link>
-
-      </nav>
+      <SiteNav />
 
       {/* HERO */}
 

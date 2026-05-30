@@ -3,10 +3,10 @@
 import "./About.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import SiteNav from "./SiteNav";
 
 import teamImg from "../assets/team.jpeg";
 import founderImg from "../assets/founder.jpg";
-import logo from "../assets/logo.jpeg";
 
 /* GALLERY IMAGES */
 
@@ -100,49 +100,7 @@ function About() {
 
       {/* NAVBAR */}
 
-      <nav className="navbar">
-
-        <img
-          src={logo}
-          alt="Oppidan India"
-          className="logo-img"
-        />
-
-        <ul className="nav-links">
-
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li className="active">
-            <Link to="/about">About</Link>
-          </li>
-
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-
-          <li>
-            <Link to="/projects">Ventures</Link>
-          </li>
-
-          <li>
-            <Link to="/internship">Internship</Link>
-          </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-
-        </ul>
-
-         <Link to="/contact">
-          <button className="nav-btn">
-            Connect With Us
-          </button>
-        </Link>
-
-      </nav>
+      <SiteNav />
 
       {/* HERO SECTION */}
 

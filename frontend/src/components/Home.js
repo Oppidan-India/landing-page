@@ -2,6 +2,7 @@
 
 import "./Home.css";
 import { Link } from "react-router-dom";
+import SiteNav from "./SiteNav";
 
 import heroImg from "../assets/hero-section-img.jpg";
 import ikl from "../assets/IKL.jpeg";
@@ -11,7 +12,6 @@ import lou from "../assets/unity.jpeg";
 import ogd from "../assets/dragon.jpeg";
 import inn from "../assets/innovator.jpg";
 import kar from "../assets/karate.jpg";
-import logo from "../assets/logo.jpeg";
 
 /* CLIENT IMAGES */
 
@@ -123,49 +123,7 @@ function Home() {
 
       {/* NAVBAR */}
 
-      <nav className="navbar">
-
-        <img
-          src={logo}
-          alt="Oppidan India"
-          className="logo-img"
-        />
-
-        <ul className="nav-links">
-
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-
-          <li>
-            <Link to="/projects">Ventures</Link>
-          </li>
-
-          <li>
-            <Link to="/internship">Internship</Link>
-          </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-
-        </ul>
-
-         <Link to="/contact">
-          <button className="nav-btn">
-            Connect With Us
-          </button>
-        </Link>
-
-      </nav>
+      <SiteNav />
 
       {/* HERO */}
 
